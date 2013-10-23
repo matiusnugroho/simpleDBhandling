@@ -87,9 +87,9 @@ class dbHandler {
     function hapusDenganKondisi (array $kondisi) {
         $this->dbQuery = "DELETE FROM ".$this->namaTabel." WHERE ";
         foreach ($kondisi as $key => $value) {
-            $this->dbQuery .= "$key = '$value' AND ";
+            $this->dbQuery .= "$key = '$value' OR ";
         }
-        $this->dbQuery = rtrim($this->dbQuery, 'AND');
+        $this->dbQuery = rtrim($this->dbQuery, 'OR');
         $this->status = mysql_query($this->dbQuery);
     }
 }
