@@ -4,7 +4,7 @@
  * Seperti namanya, kelas ini dibuat untuk mempermudah penulisan script
  * yang menangani operasi CRUD, dengan fungsi yang ringkas sehinggga dapat mempercepat 
  * pekerjaan dalam coding, hehehe
- * @author MN12
+ * @author MN12 Matius Nugroho
  */
 class dbHandler {
     private $namaTabel;
